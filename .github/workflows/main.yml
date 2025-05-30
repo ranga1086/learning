@@ -16,5 +16,9 @@ jobs:
         cache: maven
     - name: Build Application
       run: mvn -B package --file pom.xml
+    - name: Checking the version
+      run: hostname
+    - name: Echo test
+      run: echo "Testing user"
     
     
