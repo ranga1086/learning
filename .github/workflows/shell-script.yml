@@ -1,8 +1,9 @@
 name: Unix Script
 
 on:
-  push:
-
+  workflow_dispatch:
+    inputs:
+      name:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,3 +21,5 @@ jobs:
       run: java --version
     - name: user 
       run: whoami
+    - name: Print the input variable
+      run: echo "Variable is $name"
