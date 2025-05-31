@@ -5,7 +5,7 @@ on:
     inputs:
       name:
 jobs:
-  build:
+  run_unix:
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v4
@@ -23,3 +23,6 @@ jobs:
       run: whoami
     - name: Print the input variable
       run: echo "Variable is $name"
+  test_job:
+    - name: Print Name
+      run: echo "My name is Ranganath R"
