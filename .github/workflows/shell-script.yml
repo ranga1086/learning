@@ -18,3 +18,5 @@ jobs:
       run: hostname
     - name: JAVA version
       run: java --version
+    - name: user 
+      run: whoami
