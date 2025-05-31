@@ -1,4 +1,4 @@
-name: Unix Script
+name: Multiple Jobs
 
 on:
   workflow_dispatch:
