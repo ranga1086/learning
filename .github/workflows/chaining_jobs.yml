@@ -1,0 +1,25 @@
+name: Unix Script
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+jobs:
+  run_unix:
+    name: "Learning Github"
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Print the hostname
+      run: hostname
+  job2:
+    name: "Job-2"
+    runs-on: ubuntu-latest
+    steps: 
+    - name: user 
+      run: whoami
+  job3:
+    name: "Job-3"
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Print the input variable
+      run: echo "Variable is ${{ github.event.inputs.name }}"
