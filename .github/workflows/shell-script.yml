@@ -23,6 +23,7 @@ jobs:
       run: whoami
     - name: Print the input variable
       run: echo "Variable is $name"
-  test_job:
+  run_unix:
+    steps: 
     - name: Print Name
       run: echo "My name is Ranganath R"
