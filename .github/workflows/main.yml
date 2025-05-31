@@ -1,9 +1,7 @@
 name: Java build
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
+  push
 
 jobs:
   build:
