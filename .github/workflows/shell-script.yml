@@ -23,6 +23,6 @@ jobs:
     - name: user 
       run: whoami
     - name: Print the input variable
-      run: echo "Variable is $name"
+      run: echo "Variable is ${{ github.events.input.name }}"
     - name: Print Name
       run: echo "My name is Ranganath R"
