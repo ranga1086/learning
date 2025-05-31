@@ -26,10 +26,3 @@ jobs:
       run: echo "Variable is ${{ github.event.inputs.name }}"
     - name: Print Name
       run: echo "My name is Ranganath R"
-jobs:
-  run_linux:
-    name: "Job2"
-    runs-on: ubuntu-latest
-    steps: 
-    - name: user 
-      run: whoami
