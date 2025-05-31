@@ -19,6 +19,8 @@ jobs:
       run: whoami
   job3:
     name: "Job-3"
+    needs: 
+      - job2
     runs-on: ubuntu-latest
     steps: 
     - name: Print the input variable
