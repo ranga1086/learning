@@ -16,3 +16,5 @@ jobs:
         cache: maven
     - name: Print the hostname
       run: hostname
+    - name: JAVA version
+      run: java --version
