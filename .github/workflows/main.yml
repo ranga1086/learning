@@ -20,5 +20,9 @@ jobs:
       run: hostname
     - name: Echo test
       run: echo "Testing user"
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4.6.2
+      with:
+        name: learning_artifact
     
     
