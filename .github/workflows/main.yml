@@ -25,6 +25,6 @@ jobs:
       with:
         name: learning
         path: |
-          payslip-0.0.1-SNAPSHOT.war
+          target/payslip-0.0.1-SNAPSHOT.war
     
     
